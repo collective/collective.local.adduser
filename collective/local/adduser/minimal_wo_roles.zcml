@@ -26,4 +26,8 @@
       permission="zope2.ManageUsers"
       />
 
+  <configure zcml:condition="installed plone.app.dexterity">
+      <include file="dexterity.zcml" />
+  </configure>
+
 </configure>
