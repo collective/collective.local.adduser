@@ -25,7 +25,7 @@ class AddUserSchema(object):
     implements(IAddUserSchemaExtender)
     order = 10
 
-    def add_fields(self, fields):
+    def add_fields(self, fields, context=None):
         fields += form.Fields(IAddUserSchema)
         fields['roles'].custom_widget = MultiCheckBoxVocabularyWidget
         return fields

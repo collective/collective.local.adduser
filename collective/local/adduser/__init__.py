@@ -49,7 +49,7 @@ class AddUserForm(RegistrationForm):
 
         allFields = defaultFields
         for name, extender in getSchemaExtenders():
-            allFields = extender.add_fields(allFields)
+            allFields = extender.add_fields(allFields, context=self.context)
 
         return allFields
 
