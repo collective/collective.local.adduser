@@ -57,7 +57,7 @@ class AddUserForm(RegistrationForm):
     @form.action(PMF(u'label_register', default=u'Register'),
                              validator='validate_registration', name=u'register')
     def action_join(self, action, data):
-        super(AddUserForm, self).handle_join_success(data)
+        self.handle_join_success(data)
 
         for name, extender in getSchemaExtenders():
             extender.handle_data(data, self.context, self.request)

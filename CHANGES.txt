@@ -4,7 +4,9 @@ Changelog
 1.5 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Use self.handle_join_success instead of super in add form, this allows to
+  override only the method in a subclass.
+  [vincentfretin]
 
 
 1.4 (2013-07-18)
