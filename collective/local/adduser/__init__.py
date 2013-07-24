@@ -30,7 +30,11 @@ class AddUserInSharing(ViewletBase):
     jQuery(document).ready(function(){
         jQuery('#new-user-link').prepOverlay({
             subtype: 'ajax',
-            filter: common_content_filter});
+            cssclass: 'overlay-local-adduser',
+            filter: common_content_filter,
+            formselector: 'form',
+            noform: function(el) {return $.plonepopups.noformerrorshow(el, 'reload');}
+            });
     });
 </script>
 <p><a href="%s" id="new-user-link">%s</a></p>""" % (

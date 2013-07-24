@@ -4,6 +4,9 @@ Changelog
 1.5 (unreleased)
 ----------------
 
+- Fixed reload of overlay in case of errors.
+  [vincentfretin]
+
 - Use self.handle_join_success instead of super in add form, this allows to
   override only the method in a subclass.
   [vincentfretin]
