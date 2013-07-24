@@ -32,7 +32,7 @@ class AddUserInSharing(ViewletBase):
             subtype: 'ajax',
             cssclass: 'overlay-local-adduser',
             filter: common_content_filter,
-            formselector: 'form',
+            formselector: 'form[id^=zc]',
             noform: function(el) {return $.plonepopups.noformerrorshow(el, 'reload');}
             });
     });
