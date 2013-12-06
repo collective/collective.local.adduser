@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.5 (unreleased)
+1.5 (2013-12-06)
 ----------------
 
 - Fixed reload of overlay in case of errors.
